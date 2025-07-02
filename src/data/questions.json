@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "question": "Bugün bir filmden beklentin nedir?",
+    "options": [
+      "Kafamı dağıtsın",
+      "İlham versin",
+      "Beni güldürsün",
+      "Hüzünlendirsin",
+      "Sürüklesin"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Şu anda ruh halin nasıl?",
+    "options": ["Yorgunum", "Mutluyum", "Hüzünlüyüm", "Meraklıyım", "Sakinim"]
+  },
+  {
+    "id": 3,
+    "question": "Filmlerde hangi öğe seni en çok etkiler?",
+    "options": [
+      "Karakter gelişimi",
+      "Görsel atmosfer",
+      "Müzikler",
+      "Yönetmen tarzı",
+      "Konunun orijinalliği"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Gerçek olaylara dayalı filmler mi tercih edersin?",
+    "options": [
+      "Evet, ilham verici oluyor",
+      "Hayır, kurgu seviyorum",
+      "Farketmez"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Bir filmi izlerken hangi ortam daha çok hoşuna gider?",
+    "options": [
+      "Sessiz bir ortam",
+      "Kalabalık arkadaşlarla",
+      "Partnerimle",
+      "Gece yalnız"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Zihinsel olarak ne kadar yoğunluk istiyorsun?",
+    "options": [
+      "Basit ve keyifli",
+      "Düşündüren",
+      "Psikolojik",
+      "Felsefi",
+      "Tempolu ve sürükleyici"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Film süresi hakkında tercihin nedir?",
+    "options": [
+      "Kısa (60-90 dk)",
+      "Orta (90-120 dk)",
+      "Uzun (>120 dk)",
+      "Önemli değil"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Favori anlatım biçimin hangisi?",
+    "options": [
+      "Doğrusal klasik anlatım",
+      "Flashback’li kurgu",
+      "Paralel hikayeler",
+      "Sürpriz sonlu"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Filmi hangi platformda izlemeyi tercih edersin?",
+    "options": ["Netflix", "Amazon Prime", "Disney+", "Apple TV", "Farketmez"]
+  }
+]
