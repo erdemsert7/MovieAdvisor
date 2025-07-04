@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "question": "questions.1.title",
+    "options": [
+      { "label": "Kafamı dağıtsın", "icon": "Sparkles", "key": "questions.options.1.Kafamı dağıtsın" },
+      { "label": "İlham versin", "icon": "Brain", "key": "questions.options.1.İlham versin" },
+      { "label": "Beni güldürsün", "icon": "Smile", "key": "questions.options.1.Beni güldürsün" },
+      { "label": "Hüzünlendirsin", "icon": "Frown", "key": "questions.options.1.Hüzünlendirsin" },
+      { "label": "Sürüklesin", "icon": "Film", "key": "questions.options.1.Sürüklesin" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "questions.2.title",
+    "options": [
+      { "label": "Yorgunum", "icon": "Bed", "key": "questions.options.2.Yorgunum" },
+      { "label": "Mutluyum", "icon": "Smile", "key": "questions.options.2.Mutluyum" },
+      { "label": "Hüzünlüyüm", "icon": "Frown", "key": "questions.options.2.Hüzünlüyüm" },
+      { "label": "Meraklıyım", "icon": "Search", "key": "questions.options.2.Meraklıyım" },
+      { "label": "Sakinim", "icon": "CloudSun", "key": "questions.options.2.Sakinim" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "questions.3.title",
+    "options": [
+      { "label": "Karakter gelişimi", "icon": "User", "key": "questions.options.3.Karakter gelişimi" },
+      { "label": "Görsel atmosfer", "icon": "Image", "key": "questions.options.3.Görsel atmosfer" },
+      { "label": "Müzikler", "icon": "Music", "key": "questions.options.3.Müzikler" },
+      { "label": "Yönetmen tarzı", "icon": "PenTool", "key": "questions.options.3.Yönetmen tarzı" },
+      { "label": "Konunun orijinalliği", "icon": "Lightbulb", "key": "questions.options.3.Konunun orijinalliği" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "questions.4.title",
+    "options": [
+      { "label": "Evet, ilham verici oluyor", "icon": "BookOpen", "key": "questions.options.4.Evet, ilham verici oluyor" },
+      { "label": "Hayır, kurgu seviyorum", "icon": "Film", "key": "questions.options.4.Hayır, kurgu seviyorum" },
+      { "label": "Farketmez", "icon": "CircleEllipsis", "key": "questions.options.4.Farketmez" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "questions.5.title",
+    "options": [
+      { "label": "Sessiz bir ortam", "icon": "VolumeX", "key": "questions.options.5.Sessiz bir ortam" },
+      { "label": "Kalabalık arkadaşlarla", "icon": "Users", "key": "questions.options.5.Kalabalık arkadaşlarla" },
+      { "label": "Partnerimle", "icon": "Heart", "key": "questions.options.5.Partnerimle" },
+      { "label": "Gece yalnız", "icon": "Moon", "key": "questions.options.5.Gece yalnız" }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "questions.6.title",
+    "options": [
+      { "label": "Basit ve keyifli", "icon": "Coffee", "key": "questions.options.6.Basit ve keyifli" },
+      { "label": "Düşündüren", "icon": "Brain", "key": "questions.options.6.Düşündüren" },
+      { "label": "Psikolojik", "icon": "Eye", "key": "questions.options.6.Psikolojik" },
+      { "label": "Felsefi", "icon": "Quote", "key": "questions.options.6.Felsefi" },
+      { "label": "Tempolu ve sürükleyici", "icon": "Zap", "key": "questions.options.6.Tempolu ve sürükleyici" }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "questions.7.title",
+    "options": [
+      { "label": "Kısa (60-90 dk)", "icon": "Clock", "key": "questions.options.7.Kısa (60-90 dk)" },
+      { "label": "Orta (90-120 dk)", "icon": "Timer", "key": "questions.options.7.Orta (90-120 dk)" },
+      { "label": "Uzun (>120 dk)", "icon": "Hourglass", "key": "questions.options.7.Uzun (>120 dk)" },
+      { "label": "Önemli değil", "icon": "CircleEllipsis", "key": "questions.options.7.Önemli değil" }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "questions.8.title",
+    "options": [
+      { "label": "Doğrusal klasik anlatım", "icon": "AlignJustify", "key": "questions.options.8.Doğrusal klasik anlatım" },
+      { "label": "Flashback’li kurgu", "icon": "History", "key": "questions.options.8.Flashback’li kurgu" },
+      { "label": "Paralel hikayeler", "icon": "Layers", "key": "questions.options.8.Paralel hikayeler" },
+      { "label": "Sürpriz sonlu", "icon": "AlertTriangle", "key": "questions.options.8.Sürpriz sonlu" }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "questions.9.title",
+    "options": [
+      { "label": "Netflix", "icon": "Tv", "key": "questions.options.9.Netflix" },
+      { "label": "Amazon Prime", "icon": "Box", "key": "questions.options.9.Amazon Prime" },
+      { "label": "Disney+", "icon": "MagicWand", "key": "questions.options.9.Disney+" },
+      { "label": "Apple TV", "icon": "Apple", "key": "questions.options.9.Apple TV" },
+      { "label": "Farketmez", "icon": "CircleEllipsis", "key": "questions.options.9.Farketmez" }
+    ]
+  }
+]
