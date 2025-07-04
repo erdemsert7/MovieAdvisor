@@ -1,73 +1,119 @@
 "use client";
 
-import questions from "@/data/questions.json";
-import { useState } from "react";
+import movieQuestions from "@/data/moviesQuestions.json";
+import seriesQuestions from "@/data/seriesQuestions.json";
+import { useAppStore } from "@/store/useAppStore";
+import { useState, useEffect } from "react";
 import { useQuestionStore } from "@/store/useQuestionStore";
 import { useRouter } from "next/navigation";
+import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
+import AppCard from "@/components/AppCard";
+import { Button } from "@/components/button";
+import Stepper from "@/components/Stepper";
+import { useLanguage } from "@/context/languageContext";
+import QuestionForm from "@/components/QuestionForm";
+import ConfirmDialog from "@/components/ConfirmDialog";
 
 export default function QuestionStepper() {
   const { answers, setAnswer } = useQuestionStore();
-  const [step, setStep] = useState(0);
+  const { category } = useAppStore();
   const router = useRouter();
+  const { t } = useLanguage();
+  const [step, setStep] = useState(0);
+  const [showDialog, setShowDialog] = useState(false);
+  const questions = category === "movie" ? movieQuestions : seriesQuestions;
   const total = questions.length;
   const current = questions[step];
 
-  const handleOptionClick = (option: string) => {
-    setAnswer(current.id, option);
-  };
+  useEffect(() => {
+    if (!category) {
+      router.replace("/");
+    }
+  }, [category, router]);
+
+  if (!category) return null;
 
   const goNext = () => {
-    if (step < total - 1) setStep(step + 1);
+    if (!answers[current.id]) return;
+    if (step < total - 1) setStep((s) => s + 1);
     else router.push("/results");
   };
 
   const goBack = () => {
-    if (step > 0) setStep(step - 1);
+    if (step === 0) {
+      setShowDialog(true);
+    } else {
+      setStep((s) => s - 1);
+    }
+  };
+
+  const handleDialogConfirm = () => {
+    setShowDialog(false);
+    router.replace("/");
+  };
+
+  const handleDialogCancel = () => {
+    setShowDialog(false);
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-10">
-      <div className="text-sm text-gray-500 mb-4">
-        Soru {step + 1} / {total}
+    <>
+      <div className="min-h-screen p-4 sm:p-6 bg-gradient-to-br from-white/90 via-white/80 to-blue-50 dark:from-gray-900/90 dark:via-gray-900/80 dark:to-blue-950 flex flex-col items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto">
+          <Stepper total={total} step={step} />
+          <AnimatePresence mode="wait">
+            <AppCard className="w-full max-w-xl p-4 sm:p-8 md:p-10">
+              <QuestionForm
+                current={current}
+                answers={answers}
+                setAnswer={setAnswer}
+                t={t}
+              />
+              <div className="flex flex-row justify-between gap-3 pt-2 w-full">
+                <Button
+                  type="button"
+                  variant="navBack"
+                  size="sm"
+                  onClick={goBack}
+                  className="flex-1 flex items-center justify-center gap-2"
+                >
+                  <ChevronLeft className="w-4 h-4" /> {t("questions.back")}
+                </Button>
+                <Button
+                  type="button"
+                  variant="success"
+                  size="sm"
+                  onClick={goNext}
+                  className="flex-1 flex items-center justify-center gap-2"
+                  disabled={!answers[current.id]}
+                >
+                  {step === total - 1 ? (
+                    <>
+                      <CheckCircle className="w-4 h-4" />{" "}
+                      {t("questions.finish")}
+                    </>
+                  ) : (
+                    <>
+                      <ChevronRight className="w-4 h-4" /> {t("questions.next")}
+                    </>
+                  )}
+                </Button>
+              </div>
+            </AppCard>
+          </AnimatePresence>
+        </div>
       </div>
-
-      <h2 className="text-2xl font-bold text-center mb-6">
-        {current.question}
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-        {current.options.map((opt) => (
-          <button
-            key={opt}
-            onClick={() => handleOptionClick(opt)}
-            className={`w-full py-3 px-4 rounded-md border transition ${
-              answers[current.id] === opt
-                ? "bg-blue-600 text-white border-blue-600"
-                : "bg-white text-gray-800 hover:bg-gray-50"
-            }`}
-          >
-            {opt}
-          </button>
-        ))}
-      </div>
-
-      <div className="flex justify-between">
-        <button
-          onClick={goBack}
-          disabled={step === 0}
-          className="text-blue-600 hover:underline disabled:opacity-40"
-        >
-          ⬅ Geri
-        </button>
-
-        <button
-          onClick={goNext}
-          disabled={!answers[current.id]}
-          className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition disabled:opacity-40"
-        >
-          {step === total - 1 ? "Bitir ve Film Göster" : "Devam ➡"}
-        </button>
-      </div>
-    </div>
+      <ConfirmDialog
+        open={showDialog}
+        title={t("questions.confirmBackTitle")}
+        description={t("questions.confirmBackDesc")}
+        confirmLabel={t("questions.confirmYes")}
+        cancelLabel={t("questions.confirmNo")}
+        onConfirm={handleDialogConfirm}
+        onCancel={handleDialogCancel}
+        variant="default"
+      />
+    </>
   );
 }

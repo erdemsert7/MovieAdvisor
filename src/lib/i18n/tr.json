@@ -1,0 +1,117 @@
+{
+  "home": {
+    "title": "Bugün ne izlemek istersiniz?",
+    "subTitle": "Seçiminize göre birkaç soruyu cevaplayarak size en uygun <b>film</b> veya <b>diziyi</b> önereceğiz.",
+    "movie": "Film",
+    "series": "Dizi",
+    "movieAria": "Film seçimi yap",
+    "seriesAria": "Dizi seçimi yap"
+  },
+  "navbar": {
+    "defaultTitle": "Film & Dizi Danışmanı",
+    "movieTitle": "Film Danışmanı",
+    "seriesTitle": "Dizi Danışmanı"
+  },
+  "questions": {
+    "title": "Soruları cevaplayın",
+    "back": "Geri",
+    "next": "Devam",
+    "finish": "Bitir ve Film Göster",
+    "1": {
+      "title": "Bugün bir filmden beklentin nedir?"
+    },
+    "2": {
+      "title": "Şu anda ruh halin nasıl?"
+    },
+    "3": {
+      "title": "Filmlerde hangi öğe seni en çok etkiler?"
+    },
+    "4": {
+      "title": "Gerçek olaylara dayalı filmler mi tercih edersin?"
+    },
+    "5": {
+      "title": "Filmi izlerken hangi ortam daha çok hoşuna gider?"
+    },
+    "6": {
+      "title": "Zihinsel olarak ne kadar yoğunluk istiyorsun?"
+    },
+    "7": {
+      "title": "Film süresi hakkında tercihin nedir?"
+    },
+    "8": {
+      "title": "Favori anlatım biçimin hangisi?"
+    },
+    "9": {
+      "title": "Filmi hangi platformda izlemeyi tercih edersin?"
+    },
+    "options": {
+      "1": {
+        "Kafamı dağıtsın": "Kafamı dağıtsın",
+        "İlham versin": "İlham versin",
+        "Beni güldürsün": "Beni güldürsün",
+        "Hüzünlendirsin": "Hüzünlendirsin",
+        "Sürüklesin": "Sürüklesin"
+      },
+      "2": {
+        "Yorgunum": "Yorgunum",
+        "Mutluyum": "Mutluyum",
+        "Hüzünlüyüm": "Hüzünlüyüm",
+        "Meraklıyım": "Meraklıyım",
+        "Sakinim": "Sakinim"
+      },
+      "3": {
+        "Karakter gelişimi": "Karakter gelişimi",
+        "Görsel atmosfer": "Görsel atmosfer",
+        "Müzikler": "Müzikler",
+        "Yönetmen tarzı": "Yönetmen tarzı",
+        "Konunun orijinalliği": "Konunun orijinalliği"
+      },
+      "4": {
+        "Evet, ilham verici oluyor": "Evet, ilham verici oluyor",
+        "Hayır, kurgu seviyorum": "Hayır, kurgu seviyorum",
+        "Farketmez": "Farketmez"
+      },
+      "5": {
+        "Sessiz bir ortam": "Sessiz bir ortam",
+        "Kalabalık arkadaşlarla": "Kalabalık arkadaşlarla",
+        "Partnerimle": "Partnerimle",
+        "Gece yalnız": "Gece yalnız"
+      },
+      "6": {
+        "Basit ve keyifli": "Basit ve keyifli",
+        "Düşündüren": "Düşündüren",
+        "Psikolojik": "Psikolojik",
+        "Felsefi": "Felsefi",
+        "Tempolu ve sürükleyici": "Tempolu ve sürükleyici"
+      },
+      "7": {
+        "Kısa (60-90 dk)": "Kısa (60-90 dk)",
+        "Orta (90-120 dk)": "Orta (90-120 dk)",
+        "Uzun (>120 dk)": "Uzun (>120 dk)",
+        "Önemli değil": "Önemli değil"
+      },
+      "8": {
+        "Doğrusal klasik anlatım": "Doğrusal klasik anlatım",
+        "Flashback’li kurgu": "Flashback’li kurgu",
+        "Paralel hikayeler": "Paralel hikayeler",
+        "Sürpriz sonlu": "Sürpriz sonlu"
+      },
+      "9": {
+        "Netflix": "Netflix",
+        "Amazon Prime": "Amazon Prime",
+        "Disney+": "Disney+",
+        "Apple TV": "Apple TV",
+        "Farketmez": "Farketmez"
+      }
+    },
+    "confirmBackTitle": "Anasayfaya dönmek üzeresiniz",
+    "confirmBackDesc": "Anasayfaya dönersen cevapların sıfırlanacak. Devam etmek istediğine emin misin?",
+    "confirmYes": "Evet, dön",
+    "confirmNo": "Hayır, kal"
+  },
+
+  "language": {
+    "turkish": "Türkçe",
+    "english": "İngilizce"
+  }
+}

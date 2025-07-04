@@ -1,0 +1,116 @@
+{
+  "home": {
+    "title": "What would you like to watch today?",
+    "subTitle": "We will recommend the most suitable <b>movie</b> or <b>series</b> for you by answering a few questions.",
+    "movie": "Movie",
+    "series": "Series",
+    "movieAria": "Select movie",
+    "seriesAria": "Select series"
+  },
+  "navbar": {
+    "defaultTitle": "Movies & Series Advisor",
+    "movieTitle": "Movies Advisor",
+    "seriesTitle": "Series Advisor"
+  },
+  "questions": {
+    "title": "Answer the questions",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish and Show Movie",
+    "confirmBackTitle": "You are about to return to the homepage",
+    "confirmBackDesc": "Returning to the homepage will reset your answers. Are you sure you want to proceed?",
+    "confirmYes": "Yes, go back",
+    "confirmNo": "No, stay",
+    "1": {
+      "title": "What do you expect from a movie today?"
+    },
+    "2": {
+      "title": "How do you feel right now?"
+    },
+    "3": {
+      "title": "Which element impresses you most in movies?"
+    },
+    "4": {
+      "title": "Do you prefer movies based on true stories?"
+    },
+    "5": {
+      "title": "Which environment do you prefer while watching a movie?"
+    },
+    "6": {
+      "title": "How much mental intensity do you want?"
+    },
+    "7": {
+      "title": "What is your preference about movie duration?"
+    },
+    "8": {
+      "title": "What is your favorite narrative style?"
+    },
+    "9": {
+      "title": "Which platform do you prefer to watch the movie on?"
+    },
+    "options": {
+      "1": {
+        "Kafamı dağıtsın": "Distract me",
+        "İlham versin": "Inspire me",
+        "Beni güldürsün": "Make me laugh",
+        "Hüzünlendirsin": "Make me sad",
+        "Sürüklesin": "Be thrilling"
+      },
+      "2": {
+        "Yorgunum": "I'm tired",
+        "Mutluyum": "I'm happy",
+        "Hüzünlüyüm": "I'm sad",
+        "Meraklıyım": "I'm curious",
+        "Sakinim": "I'm calm"
+      },
+      "3": {
+        "Karakter gelişimi": "Character development",
+        "Görsel atmosfer": "Visual atmosphere",
+        "Müzikler": "Music",
+        "Yönetmen tarzı": "Director's style",
+        "Konunun orijinalliği": "Originality of the subject"
+      },
+      "4": {
+        "Evet, ilham verici oluyor": "Yes, it's inspiring",
+        "Hayır, kurgu seviyorum": "No, I like fiction",
+        "Farketmez": "Doesn't matter"
+      },
+      "5": {
+        "Sessiz bir ortam": "A quiet environment",
+        "Kalabalık arkadaşlarla": "With a group of friends",
+        "Partnerimle": "With my partner",
+        "Gece yalnız": "Alone at night"
+      },
+      "6": {
+        "Basit ve keyifli": "Simple and fun",
+        "Düşündüren": "Thought-provoking",
+        "Psikolojik": "Psychological",
+        "Felsefi": "Philosophical",
+        "Tempolu ve sürükleyici": "Fast-paced and thrilling"
+      },
+      "7": {
+        "Kısa (60-90 dk)": "Short (60-90 min)",
+        "Orta (90-120 dk)": "Medium (90-120 min)",
+        "Uzun (>120 dk)": "Long (>120 min)",
+        "Önemli değil": "Doesn't matter"
+      },
+      "8": {
+        "Doğrusal klasik anlatım": "Linear classical narration",
+        "Flashback’li kurgu": "Flashback editing",
+        "Paralel hikayeler": "Parallel stories",
+        "Sürpriz sonlu": "With a twist ending"
+      },
+      "9": {
+        "Netflix": "Netflix",
+        "Amazon Prime": "Amazon Prime",
+        "Disney+": "Disney+",
+        "Apple TV": "Apple TV",
+        "Farketmez": "Doesn't matter"
+      }
+    }
+  },
+  "language": {
+    "turkish": "Turkish",
+    "english": "English"
+  }
+}
