@@ -7,7 +7,7 @@ import {
   useEffect,
   type ReactNode,
 } from "react";
-import { type Language, getTranslation } from "@/lib/i18n";
+import { type Language, getTranslation } from "@/lib/index";
 
 type LanguageContextType = {
   language: Language;
