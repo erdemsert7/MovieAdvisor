@@ -1,255 +1,449 @@
 [
   {
     "id": 1,
-    "question": "questions.1.title",
+    "question": "questions.series.1.title",
+    "tmdbParam": "with_genres",
+    "multiSelect": true,
     "options": [
       {
-        "label": "Kafamı dağıtsın",
-        "icon": "Sparkles",
-        "key": "questions.options.1.Kafamı dağıtsın"
+        "label": "Aksiyon",
+        "icon": "Zap",
+        "key": "questions.options.series.1.action",
+        "tmdbValue": "10759"
       },
       {
-        "label": "İlham versin",
-        "icon": "Brain",
-        "key": "questions.options.1.İlham versin"
+        "label": "Macera",
+        "icon": "Map",
+        "key": "questions.options.series.1.adventure",
+        "tmdbValue": "10759"
       },
       {
-        "label": "Beni güldürsün",
+        "label": "Animasyon",
+        "icon": "Palette",
+        "key": "questions.options.series.1.animation",
+        "tmdbValue": "16"
+      },
+      {
+        "label": "Komedi",
         "icon": "Smile",
-        "key": "questions.options.1.Beni güldürsün"
+        "key": "questions.options.series.1.comedy",
+        "tmdbValue": "35"
       },
       {
-        "label": "Hüzünlendirsin",
-        "icon": "Frown",
-        "key": "questions.options.1.Hüzünlendirsin"
+        "label": "Suç",
+        "icon": "Shield",
+        "key": "questions.options.series.1.crime",
+        "tmdbValue": "80"
       },
       {
-        "label": "Sürüklesin",
-        "icon": "Film",
-        "key": "questions.options.1.Sürüklesin"
+        "label": "Belgesel",
+        "icon": "FileText",
+        "key": "questions.options.series.1.documentary",
+        "tmdbValue": "99"
+      },
+      {
+        "label": "Drama",
+        "icon": "Theater",
+        "key": "questions.options.series.1.drama",
+        "tmdbValue": "18"
+      },
+      {
+        "label": "Aile",
+        "icon": "Home",
+        "key": "questions.options.series.1.family",
+        "tmdbValue": "10751"
+      },
+      {
+        "label": "Çocuk",
+        "icon": "Baby",
+        "key": "questions.options.series.1.kids",
+        "tmdbValue": "10762"
+      },
+      {
+        "label": "Gizem",
+        "icon": "Search",
+        "key": "questions.options.series.1.mystery",
+        "tmdbValue": "9648"
+      },
+      {
+        "label": "Haber",
+        "icon": "Newspaper",
+        "key": "questions.options.series.1.news",
+        "tmdbValue": "10763"
+      },
+      {
+        "label": "Reality",
+        "icon": "Camera",
+        "key": "questions.options.series.1.reality",
+        "tmdbValue": "10764"
+      },
+      {
+        "label": "Bilim Kurgu",
+        "icon": "Rocket",
+        "key": "questions.options.series.1.sciFi",
+        "tmdbValue": "10765"
+      },
+      {
+        "label": "Pembe Dizi",
+        "icon": "Heart",
+        "key": "questions.options.series.1.soap",
+        "tmdbValue": "10766"
+      },
+      {
+        "label": "Talk Show",
+        "icon": "MessageCircle",
+        "key": "questions.options.series.1.talkShow",
+        "tmdbValue": "10767"
+      },
+      {
+        "label": "Savaş",
+        "icon": "Sword",
+        "key": "questions.options.series.1.war",
+        "tmdbValue": "10768"
       }
     ]
   },
   {
     "id": 2,
-    "question": "questions.2.title",
+    "question": "questions.series.2.title",
+    "tmdbParam": "first_air_date.gte",
+    "multiSelect": false,
     "options": [
       {
-        "label": "Yorgunum",
-        "icon": "Bed",
-        "key": "questions.options.2.Yorgunum"
+        "label": "2024",
+        "icon": "Calendar",
+        "key": "questions.options.series.2.year2024",
+        "tmdbValue": "2024-01-01"
       },
       {
-        "label": "Mutluyum",
-        "icon": "Smile",
-        "key": "questions.options.2.Mutluyum"
+        "label": "2020-2023",
+        "icon": "CalendarDays",
+        "key": "questions.options.series.2.year2020to2023",
+        "tmdbValue": "2020-01-01"
       },
       {
-        "label": "Hüzünlüyüm",
-        "icon": "Frown",
-        "key": "questions.options.2.Hüzünlüyüm"
+        "label": "2010-2019",
+        "icon": "Clock",
+        "key": "questions.options.series.2.year2010to2019",
+        "tmdbValue": "2010-01-01"
       },
       {
-        "label": "Meraklıyım",
-        "icon": "Search",
-        "key": "questions.options.2.Meraklıyım"
+        "label": "2000-2009",
+        "icon": "History",
+        "key": "questions.options.series.2.year2000to2009",
+        "tmdbValue": "2000-01-01"
       },
       {
-        "label": "Sakinim",
-        "icon": "CloudSun",
-        "key": "questions.options.2.Sakinim"
+        "label": "1990-1999",
+        "icon": "Rewind",
+        "key": "questions.options.series.2.year1990to1999",
+        "tmdbValue": "1990-01-01"
+      },
+      {
+        "label": "Klasikler",
+        "icon": "Crown",
+        "key": "questions.options.series.2.classics",
+        "tmdbValue": "1900-01-01"
       }
     ]
   },
   {
     "id": 3,
-    "question": "questions.3.title",
+    "question": "questions.series.3.title",
+    "tmdbParam": "vote_average.gte",
+    "multiSelect": false,
     "options": [
       {
-        "label": "Karakter gelişimi",
-        "icon": "User",
-        "key": "questions.options.3.Karakter gelişimi"
+        "label": "Mükemmel",
+        "icon": "Award",
+        "key": "questions.options.series.3.perfect",
+        "tmdbValue": "9.0"
       },
       {
-        "label": "Görsel atmosfer",
-        "icon": "Image",
-        "key": "questions.options.3.Görsel atmosfer"
+        "label": "Çok yüksek",
+        "icon": "Star",
+        "key": "questions.options.series.3.veryHigh",
+        "tmdbValue": "8.0"
       },
       {
-        "label": "Müzikler",
-        "icon": "Music",
-        "key": "questions.options.3.Müzikler"
+        "label": "Yüksek",
+        "icon": "TrendingUp",
+        "key": "questions.options.series.3.high",
+        "tmdbValue": "7.0"
       },
       {
-        "label": "Yönetmen tarzı",
-        "icon": "PenTool",
-        "key": "questions.options.3.Yönetmen tarzı"
+        "label": "İyi",
+        "icon": "ThumbsUp",
+        "key": "questions.options.series.3.good",
+        "tmdbValue": "6.0"
       },
       {
-        "label": "Konunun orijinalliği",
-        "icon": "Lightbulb",
-        "key": "questions.options.3.Konunun orijinalliği"
+        "label": "Orta",
+        "icon": "Minus",
+        "key": "questions.options.series.3.average",
+        "tmdbValue": "5.0"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.series.3.doesntMatter",
+        "tmdbValue": "0"
       }
     ]
   },
   {
     "id": 4,
-    "question": "questions.4.title",
+    "question": "questions.series.4.title",
+    "tmdbParam": "with_status",
+    "multiSelect": false,
     "options": [
       {
-        "label": "Evet, ilham verici oluyor",
-        "icon": "BookOpen",
-        "key": "questions.options.4.Evet, ilham verici oluyor"
+        "label": "Devam eden",
+        "icon": "Play",
+        "key": "questions.options.series.4.ongoing",
+        "tmdbValue": "0"
       },
       {
-        "label": "Hayır, kurgu seviyorum",
-        "icon": "Film",
-        "key": "questions.options.4.Hayır, kurgu seviyorum"
+        "label": "Tamamlanmış",
+        "icon": "CheckCircle",
+        "key": "questions.options.series.4.completed",
+        "tmdbValue": "5"
+      },
+      {
+        "label": "İptal edilmiş",
+        "icon": "XCircle",
+        "key": "questions.options.series.4.cancelled",
+        "tmdbValue": "4"
+      },
+      {
+        "label": "Planlanıyor",
+        "icon": "Calendar",
+        "key": "questions.options.series.4.inPlanning",
+        "tmdbValue": "1"
       },
       {
         "label": "Farketmez",
         "icon": "CircleEllipsis",
-        "key": "questions.options.4.Farketmez"
+        "key": "questions.options.series.4.doesntMatter",
+        "tmdbValue": ""
       }
     ]
   },
   {
     "id": 5,
-    "question": "questions.5.title",
+    "question": "questions.series.5.title",
+    "tmdbParam": "with_original_language",
+    "multiSelect": false,
     "options": [
       {
-        "label": "Sessiz bir ortam",
-        "icon": "VolumeX",
-        "key": "questions.options.5.Sessiz bir ortam"
+        "label": "İngilizce",
+        "icon": "Globe",
+        "key": "questions.options.series.5.english",
+        "tmdbValue": "en"
       },
       {
-        "label": "Kalabalık arkadaşlarla",
-        "icon": "Users",
-        "key": "questions.options.5.Kalabalık arkadaşlarla"
+        "label": "Türkçe",
+        "icon": "MapPin",
+        "key": "questions.options.series.5.turkish",
+        "tmdbValue": "tr"
       },
       {
-        "label": "Partnerimle",
-        "icon": "Heart",
-        "key": "questions.options.5.Partnerimle"
+        "label": "Fransızca",
+        "icon": "Coffee",
+        "key": "questions.options.series.5.french",
+        "tmdbValue": "fr"
       },
       {
-        "label": "Gece yalnız",
-        "icon": "Moon",
-        "key": "questions.options.5.Gece yalnız"
+        "label": "İspanyolca",
+        "icon": "Sun",
+        "key": "questions.options.series.5.spanish",
+        "tmdbValue": "es"
+      },
+      {
+        "label": "Japonca",
+        "icon": "Mountain",
+        "key": "questions.options.series.5.japanese",
+        "tmdbValue": "ja"
+      },
+      {
+        "label": "Korece",
+        "icon": "Waves",
+        "key": "questions.options.series.5.korean",
+        "tmdbValue": "ko"
+      },
+      {
+        "label": "İtalyanca",
+        "icon": "Pizza",
+        "key": "questions.options.series.5.italian",
+        "tmdbValue": "it"
+      },
+      {
+        "label": "Almanca",
+        "icon": "Beer",
+        "key": "questions.options.series.5.german",
+        "tmdbValue": "de"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.series.5.doesntMatter",
+        "tmdbValue": ""
       }
     ]
   },
   {
     "id": 6,
-    "question": "questions.6.title",
+    "question": "questions.series.6.title",
+    "tmdbParam": "with_keywords",
+    "multiSelect": true,
     "options": [
       {
-        "label": "Basit ve keyifli",
-        "icon": "Coffee",
-        "key": "questions.options.6.Basit ve keyifli"
+        "label": "Polis",
+        "icon": "Shield",
+        "key": "questions.options.series.6.police",
+        "tmdbValue": "6149"
       },
       {
-        "label": "Düşündüren",
-        "icon": "Brain",
-        "key": "questions.options.6.Düşündüren"
+        "label": "Hastane",
+        "icon": "Heart",
+        "key": "questions.options.series.6.hospital",
+        "tmdbValue": "11424"
       },
       {
-        "label": "Psikolojik",
-        "icon": "Eye",
-        "key": "questions.options.6.Psikolojik"
+        "label": "Okul",
+        "icon": "GraduationCap",
+        "key": "questions.options.series.6.school",
+        "tmdbValue": "9840"
       },
       {
-        "label": "Felsefi",
-        "icon": "Quote",
-        "key": "questions.options.6.Felsefi"
+        "label": "Aile",
+        "icon": "Home",
+        "key": "questions.options.series.6.family",
+        "tmdbValue": "818"
       },
       {
-        "label": "Tempolu ve sürükleyici",
-        "icon": "Zap",
-        "key": "questions.options.6.Tempolu ve sürükleyici"
+        "label": "Fantastik",
+        "icon": "Sparkles",
+        "key": "questions.options.series.6.fantasy",
+        "tmdbValue": "3205"
+      },
+      {
+        "label": "Uzay",
+        "icon": "Rocket",
+        "key": "questions.options.series.6.space",
+        "tmdbValue": "1612"
+      },
+      {
+        "label": "Vampir",
+        "icon": "Moon",
+        "key": "questions.options.series.6.vampire",
+        "tmdbValue": "12377"
+      },
+      {
+        "label": "Zombi",
+        "icon": "Skull",
+        "key": "questions.options.series.6.zombie",
+        "tmdbValue": "12377"
+      },
+      {
+        "label": "Hiçbiri",
+        "icon": "X",
+        "key": "questions.options.series.6.none",
+        "tmdbValue": ""
       }
     ]
   },
   {
     "id": 7,
-    "question": "questions.7.title",
+    "question": "questions.series.7.title",
+    "tmdbParam": "sort_by",
+    "multiSelect": false,
     "options": [
       {
-        "label": "Kısa (60-90 dk)",
-        "icon": "Clock",
-        "key": "questions.options.7.Kısa (60-90 dk)"
+        "label": "En popüler",
+        "icon": "TrendingUp",
+        "key": "questions.options.series.7.mostPopular",
+        "tmdbValue": "popularity.desc"
       },
       {
-        "label": "Orta (90-120 dk)",
-        "icon": "Timer",
-        "key": "questions.options.7.Orta (90-120 dk)"
+        "label": "En yüksek puan",
+        "icon": "Star",
+        "key": "questions.options.series.7.highestRated",
+        "tmdbValue": "vote_average.desc"
       },
       {
-        "label": "Uzun (>120 dk)",
-        "icon": "Hourglass",
-        "key": "questions.options.7.Uzun (>120 dk)"
+        "label": "En yeni",
+        "icon": "Calendar",
+        "key": "questions.options.series.7.newest",
+        "tmdbValue": "first_air_date.desc"
       },
       {
-        "label": "Önemli değil",
-        "icon": "CircleEllipsis",
-        "key": "questions.options.7.Önemli değil"
+        "label": "En çok oy alan",
+        "icon": "ThumbsUp",
+        "key": "questions.options.series.7.mostVoted",
+        "tmdbValue": "vote_count.desc"
       }
     ]
   },
   {
     "id": 8,
-    "question": "questions.8.title",
-    "options": [
-      {
-        "label": "Doğrusal klasik anlatım",
-        "icon": "AlignJustify",
-        "key": "questions.options.8.Doğrusal klasik anlatım"
-      },
-      {
-        "label": "Flashback’li kurgu",
-        "icon": "History",
-        "key": "questions.options.8.Flashback’li kurgu"
-      },
-      {
-        "label": "Paralel hikayeler",
-        "icon": "Layers",
-        "key": "questions.options.8.Paralel hikayeler"
-      },
-      {
-        "label": "Sürpriz sonlu",
-        "icon": "AlertTriangle",
-        "key": "questions.options.8.Sürpriz sonlu"
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "question": "questions.9.title",
+    "question": "questions.series.8.title",
+    "tmdbParam": "with_watch_providers",
+    "multiSelect": true,
     "options": [
       {
         "label": "Netflix",
         "icon": "Tv",
-        "key": "questions.options.9.Netflix"
+        "key": "questions.options.series.8.netflix",
+        "tmdbValue": "8"
       },
       {
         "label": "Amazon Prime",
         "icon": "Box",
-        "key": "questions.options.9.Amazon Prime"
+        "key": "questions.options.series.8.amazonPrime",
+        "tmdbValue": "119"
       },
       {
         "label": "Disney+",
         "icon": "MagicWand",
-        "key": "questions.options.9.Disney+"
+        "key": "questions.options.series.8.disneyPlus",
+        "tmdbValue": "337"
       },
       {
-        "label": "Apple TV",
+        "label": "HBO Max",
+        "icon": "Monitor",
+        "key": "questions.options.series.8.hboMax",
+        "tmdbValue": "384"
+      },
+      {
+        "label": "Puhutv",
+        "icon": "Play",
+        "key": "questions.options.series.8.puhutv",
+        "tmdbValue": "423"
+      },
+      {
+        "label": "TV+",
+        "icon": "Tv2",
+        "key": "questions.options.series.8.tvPlus",
+        "tmdbValue": "69"
+      },
+      {
+        "label": "Tabii",
+        "icon": "TabletSmartphone",
+        "key": "questions.options.series.8.tabii",
+        "tmdbValue": "564"
+      },
+      {
+        "label": "Apple TV+",
         "icon": "Apple",
-        "key": "questions.options.9.Apple TV"
+        "key": "questions.options.series.8.appleTvPlus",
+        "tmdbValue": "350"
       },
       {
         "label": "Farketmez",
         "icon": "CircleEllipsis",
-        "key": "questions.options.9.Farketmez"
+        "key": "questions.options.series.8.doesntMatter",
+        "tmdbValue": ""
       }
     ]
   }

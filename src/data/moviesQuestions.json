@@ -1,96 +1,444 @@
 [
   {
     "id": 1,
-    "question": "questions.1.title",
+    "question": "questions.movie.1.title",
+    "tmdbParam": "with_genres",
+    "multiSelect": true,
     "options": [
-      { "label": "Kafamı dağıtsın", "icon": "Sparkles", "key": "questions.options.1.Kafamı dağıtsın" },
-      { "label": "İlham versin", "icon": "Brain", "key": "questions.options.1.İlham versin" },
-      { "label": "Beni güldürsün", "icon": "Smile", "key": "questions.options.1.Beni güldürsün" },
-      { "label": "Hüzünlendirsin", "icon": "Frown", "key": "questions.options.1.Hüzünlendirsin" },
-      { "label": "Sürüklesin", "icon": "Film", "key": "questions.options.1.Sürüklesin" }
+      {
+        "label": "Aksiyon",
+        "icon": "Zap",
+        "key": "questions.options.movie.1.action",
+        "tmdbValue": "28"
+      },
+      {
+        "label": "Macera",
+        "icon": "Map",
+        "key": "questions.options.movie.1.adventure",
+        "tmdbValue": "12"
+      },
+      {
+        "label": "Animasyon",
+        "icon": "Palette",
+        "key": "questions.options.movie.1.animation",
+        "tmdbValue": "16"
+      },
+      {
+        "label": "Komedi",
+        "icon": "Smile",
+        "key": "questions.options.movie.1.comedy",
+        "tmdbValue": "35"
+      },
+      {
+        "label": "Suç",
+        "icon": "Shield",
+        "key": "questions.options.movie.1.crime",
+        "tmdbValue": "80"
+      },
+      {
+        "label": "Belgesel",
+        "icon": "FileText",
+        "key": "questions.options.movie.1.documentary",
+        "tmdbValue": "99"
+      },
+      {
+        "label": "Drama",
+        "icon": "Theater",
+        "key": "questions.options.movie.1.drama",
+        "tmdbValue": "18"
+      },
+      {
+        "label": "Aile",
+        "icon": "Home",
+        "key": "questions.options.movie.1.family",
+        "tmdbValue": "10751"
+      },
+      {
+        "label": "Fantastik",
+        "icon": "Sparkles",
+        "key": "questions.options.movie.1.fantasy",
+        "tmdbValue": "14"
+      },
+      {
+        "label": "Korku",
+        "icon": "Skull",
+        "key": "questions.options.movie.1.horror",
+        "tmdbValue": "27"
+      },
+      {
+        "label": "Müzik",
+        "icon": "Music",
+        "key": "questions.options.movie.1.music",
+        "tmdbValue": "10402"
+      },
+      {
+        "label": "Gizem",
+        "icon": "Search",
+        "key": "questions.options.movie.1.mystery",
+        "tmdbValue": "9648"
+      },
+      {
+        "label": "Romantik",
+        "icon": "Heart",
+        "key": "questions.options.movie.1.romance",
+        "tmdbValue": "10749"
+      },
+      {
+        "label": "Bilim Kurgu",
+        "icon": "Rocket",
+        "key": "questions.options.movie.1.scienceFiction",
+        "tmdbValue": "878"
+      },
+      {
+        "label": "Gerilim",
+        "icon": "AlertTriangle",
+        "key": "questions.options.movie.1.thriller",
+        "tmdbValue": "53"
+      },
+      {
+        "label": "Savaş",
+        "icon": "Sword",
+        "key": "questions.options.movie.1.war",
+        "tmdbValue": "10752"
+      },
+      {
+        "label": "Vahşi Batı",
+        "icon": "Mountain",
+        "key": "questions.options.movie.1.western",
+        "tmdbValue": "37"
+      }
     ]
   },
   {
     "id": 2,
-    "question": "questions.2.title",
+    "question": "questions.movie.2.title",
+    "tmdbParam": "primary_release_date.gte",
+    "multiSelect": false,
     "options": [
-      { "label": "Yorgunum", "icon": "Bed", "key": "questions.options.2.Yorgunum" },
-      { "label": "Mutluyum", "icon": "Smile", "key": "questions.options.2.Mutluyum" },
-      { "label": "Hüzünlüyüm", "icon": "Frown", "key": "questions.options.2.Hüzünlüyüm" },
-      { "label": "Meraklıyım", "icon": "Search", "key": "questions.options.2.Meraklıyım" },
-      { "label": "Sakinim", "icon": "CloudSun", "key": "questions.options.2.Sakinim" }
+      {
+        "label": "2024",
+        "icon": "Calendar",
+        "key": "questions.options.movie.2.year2024",
+        "tmdbValue": "2024-01-01"
+      },
+      {
+        "label": "2020-2023",
+        "icon": "CalendarDays",
+        "key": "questions.options.movie.2.year2020to2023",
+        "tmdbValue": "2020-01-01"
+      },
+      {
+        "label": "2010-2019",
+        "icon": "Clock",
+        "key": "questions.options.movie.2.year2010to2019",
+        "tmdbValue": "2010-01-01"
+      },
+      {
+        "label": "2000-2009",
+        "icon": "History",
+        "key": "questions.options.movie.2.year2000to2009",
+        "tmdbValue": "2000-01-01"
+      },
+      {
+        "label": "1990-1999",
+        "icon": "Rewind",
+        "key": "questions.options.movie.2.year1990to1999",
+        "tmdbValue": "1990-01-01"
+      },
+      {
+        "label": "Klasikler",
+        "icon": "Crown",
+        "key": "questions.options.movie.2.classics",
+        "tmdbValue": "1900-01-01"
+      }
     ]
   },
   {
     "id": 3,
-    "question": "questions.3.title",
+    "question": "questions.movie.3.title",
+    "tmdbParam": "vote_average.gte",
+    "multiSelect": false,
     "options": [
-      { "label": "Karakter gelişimi", "icon": "User", "key": "questions.options.3.Karakter gelişimi" },
-      { "label": "Görsel atmosfer", "icon": "Image", "key": "questions.options.3.Görsel atmosfer" },
-      { "label": "Müzikler", "icon": "Music", "key": "questions.options.3.Müzikler" },
-      { "label": "Yönetmen tarzı", "icon": "PenTool", "key": "questions.options.3.Yönetmen tarzı" },
-      { "label": "Konunun orijinalliği", "icon": "Lightbulb", "key": "questions.options.3.Konunun orijinalliği" }
+      {
+        "label": "Mükemmel",
+        "icon": "Award",
+        "key": "questions.options.movie.3.perfect",
+        "tmdbValue": "9.0"
+      },
+      {
+        "label": "Çok yüksek",
+        "icon": "Star",
+        "key": "questions.options.movie.3.veryHigh",
+        "tmdbValue": "8.0"
+      },
+      {
+        "label": "Yüksek",
+        "icon": "TrendingUp",
+        "key": "questions.options.movie.3.high",
+        "tmdbValue": "7.0"
+      },
+      {
+        "label": "İyi",
+        "icon": "ThumbsUp",
+        "key": "questions.options.movie.3.good",
+        "tmdbValue": "6.0"
+      },
+      {
+        "label": "Orta",
+        "icon": "Minus",
+        "key": "questions.options.movie.3.average",
+        "tmdbValue": "5.0"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.movie.3.doesntMatter",
+        "tmdbValue": "0"
+      }
     ]
   },
   {
     "id": 4,
-    "question": "questions.4.title",
+    "question": "questions.movie.4.title",
+    "tmdbParam": "with_runtime.lte",
+    "multiSelect": false,
     "options": [
-      { "label": "Evet, ilham verici oluyor", "icon": "BookOpen", "key": "questions.options.4.Evet, ilham verici oluyor" },
-      { "label": "Hayır, kurgu seviyorum", "icon": "Film", "key": "questions.options.4.Hayır, kurgu seviyorum" },
-      { "label": "Farketmez", "icon": "CircleEllipsis", "key": "questions.options.4.Farketmez" }
+      {
+        "label": "Çok kısa",
+        "icon": "Zap",
+        "key": "questions.options.movie.4.veryShort",
+        "tmdbValue": "60"
+      },
+      {
+        "label": "Kısa",
+        "icon": "Clock",
+        "key": "questions.options.movie.4.short",
+        "tmdbValue": "90"
+      },
+      {
+        "label": "Orta",
+        "icon": "Timer",
+        "key": "questions.options.movie.4.medium",
+        "tmdbValue": "120"
+      },
+      {
+        "label": "Uzun",
+        "icon": "Hourglass",
+        "key": "questions.options.movie.4.long",
+        "tmdbValue": "150"
+      },
+      {
+        "label": "Çok uzun",
+        "icon": "Clock4",
+        "key": "questions.options.movie.4.veryLong",
+        "tmdbValue": "300"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.movie.4.doesntMatter",
+        "tmdbValue": ""
+      }
     ]
   },
   {
     "id": 5,
-    "question": "questions.5.title",
+    "question": "questions.movie.5.title",
+    "tmdbParam": "with_original_language",
+    "multiSelect": false,
     "options": [
-      { "label": "Sessiz bir ortam", "icon": "VolumeX", "key": "questions.options.5.Sessiz bir ortam" },
-      { "label": "Kalabalık arkadaşlarla", "icon": "Users", "key": "questions.options.5.Kalabalık arkadaşlarla" },
-      { "label": "Partnerimle", "icon": "Heart", "key": "questions.options.5.Partnerimle" },
-      { "label": "Gece yalnız", "icon": "Moon", "key": "questions.options.5.Gece yalnız" }
+      {
+        "label": "İngilizce",
+        "icon": "Globe",
+        "key": "questions.options.movie.5.english",
+        "tmdbValue": "en"
+      },
+      {
+        "label": "Türkçe",
+        "icon": "MapPin",
+        "key": "questions.options.movie.5.turkish",
+        "tmdbValue": "tr"
+      },
+      {
+        "label": "Fransızca",
+        "icon": "Coffee",
+        "key": "questions.options.movie.5.french",
+        "tmdbValue": "fr"
+      },
+      {
+        "label": "İspanyolca",
+        "icon": "Sun",
+        "key": "questions.options.movie.5.spanish",
+        "tmdbValue": "es"
+      },
+      {
+        "label": "Japonca",
+        "icon": "Mountain",
+        "key": "questions.options.movie.5.japanese",
+        "tmdbValue": "ja"
+      },
+      {
+        "label": "Korece",
+        "icon": "Waves",
+        "key": "questions.options.movie.5.korean",
+        "tmdbValue": "ko"
+      },
+      {
+        "label": "İtalyanca",
+        "icon": "Pizza",
+        "key": "questions.options.movie.5.italian",
+        "tmdbValue": "it"
+      },
+      {
+        "label": "Almanca",
+        "icon": "Beer",
+        "key": "questions.options.movie.5.german",
+        "tmdbValue": "de"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.movie.5.doesntMatter",
+        "tmdbValue": ""
+      }
     ]
   },
   {
     "id": 6,
-    "question": "questions.6.title",
+    "question": "questions.movie.6.title",
+    "tmdbParam": "certification_country",
+    "multiSelect": false,
     "options": [
-      { "label": "Basit ve keyifli", "icon": "Coffee", "key": "questions.options.6.Basit ve keyifli" },
-      { "label": "Düşündüren", "icon": "Brain", "key": "questions.options.6.Düşündüren" },
-      { "label": "Psikolojik", "icon": "Eye", "key": "questions.options.6.Psikolojik" },
-      { "label": "Felsefi", "icon": "Quote", "key": "questions.options.6.Felsefi" },
-      { "label": "Tempolu ve sürükleyici", "icon": "Zap", "key": "questions.options.6.Tempolu ve sürükleyici" }
+      {
+        "label": "Genel izleyici",
+        "icon": "Users",
+        "key": "questions.options.movie.6.generalAudience",
+        "tmdbValue": "G"
+      },
+      {
+        "label": "Aile dostu",
+        "icon": "Home",
+        "key": "questions.options.movie.6.familyFriendly",
+        "tmdbValue": "PG"
+      },
+      {
+        "label": "13 yaş üstü",
+        "icon": "UserCheck",
+        "key": "questions.options.movie.6.thirteenPlus",
+        "tmdbValue": "PG-13"
+      },
+      {
+        "label": "Yetişkin",
+        "icon": "Shield",
+        "key": "questions.options.movie.6.adult",
+        "tmdbValue": "R"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.movie.6.doesntMatter",
+        "tmdbValue": ""
+      }
     ]
   },
   {
     "id": 7,
-    "question": "questions.7.title",
+    "question": "questions.movie.7.title",
+    "tmdbParam": "sort_by",
+    "multiSelect": false,
     "options": [
-      { "label": "Kısa (60-90 dk)", "icon": "Clock", "key": "questions.options.7.Kısa (60-90 dk)" },
-      { "label": "Orta (90-120 dk)", "icon": "Timer", "key": "questions.options.7.Orta (90-120 dk)" },
-      { "label": "Uzun (>120 dk)", "icon": "Hourglass", "key": "questions.options.7.Uzun (>120 dk)" },
-      { "label": "Önemli değil", "icon": "CircleEllipsis", "key": "questions.options.7.Önemli değil" }
+      {
+        "label": "En popüler",
+        "icon": "TrendingUp",
+        "key": "questions.options.movie.7.mostPopular",
+        "tmdbValue": "popularity.desc"
+      },
+      {
+        "label": "En yüksek puan",
+        "icon": "Star",
+        "key": "questions.options.movie.7.highestRated",
+        "tmdbValue": "vote_average.desc"
+      },
+      {
+        "label": "En yeni",
+        "icon": "Calendar",
+        "key": "questions.options.movie.7.newest",
+        "tmdbValue": "release_date.desc"
+      },
+      {
+        "label": "En çok oy alan",
+        "icon": "ThumbsUp",
+        "key": "questions.options.movie.7.mostVoted",
+        "tmdbValue": "vote_count.desc"
+      },
+      {
+        "label": "Gelir sıralaması",
+        "icon": "DollarSign",
+        "key": "questions.options.movie.7.revenueRanking",
+        "tmdbValue": "revenue.desc"
+      }
     ]
   },
   {
     "id": 8,
-    "question": "questions.8.title",
+    "question": "questions.movie.8.title",
+    "tmdbParam": "with_watch_providers",
+    "multiSelect": true,
     "options": [
-      { "label": "Doğrusal klasik anlatım", "icon": "AlignJustify", "key": "questions.options.8.Doğrusal klasik anlatım" },
-      { "label": "Flashback’li kurgu", "icon": "History", "key": "questions.options.8.Flashback’li kurgu" },
-      { "label": "Paralel hikayeler", "icon": "Layers", "key": "questions.options.8.Paralel hikayeler" },
-      { "label": "Sürpriz sonlu", "icon": "AlertTriangle", "key": "questions.options.8.Sürpriz sonlu" }
-    ]
-  },
-  {
-    "id": 9,
-    "question": "questions.9.title",
-    "options": [
-      { "label": "Netflix", "icon": "Tv", "key": "questions.options.9.Netflix" },
-      { "label": "Amazon Prime", "icon": "Box", "key": "questions.options.9.Amazon Prime" },
-      { "label": "Disney+", "icon": "MagicWand", "key": "questions.options.9.Disney+" },
-      { "label": "Apple TV", "icon": "Apple", "key": "questions.options.9.Apple TV" },
-      { "label": "Farketmez", "icon": "CircleEllipsis", "key": "questions.options.9.Farketmez" }
+      {
+        "label": "Netflix",
+        "icon": "Tv",
+        "key": "questions.options.movie.8.netflix",
+        "tmdbValue": "8"
+      },
+      {
+        "label": "Amazon Prime",
+        "icon": "Box",
+        "key": "questions.options.movie.8.amazonPrime",
+        "tmdbValue": "119"
+      },
+      {
+        "label": "Disney+",
+        "icon": "MagicWand",
+        "key": "questions.options.movie.8.disneyPlus",
+        "tmdbValue": "337"
+      },
+      {
+        "label": "HBO Max",
+        "icon": "Monitor",
+        "key": "questions.options.movie.8.hboMax",
+        "tmdbValue": "384"
+      },
+      {
+        "label": "Puhutv",
+        "icon": "Play",
+        "key": "questions.options.movie.8.puhutv",
+        "tmdbValue": "423"
+      },
+      {
+        "label": "TV+",
+        "icon": "Tv2",
+        "key": "questions.options.movie.8.tvPlus",
+        "tmdbValue": "69"
+      },
+      {
+        "label": "Tabii",
+        "icon": "TabletSmartphone",
+        "key": "questions.options.movie.8.tabii",
+        "tmdbValue": "564"
+      },
+      {
+        "label": "Apple TV+",
+        "icon": "Apple",
+        "key": "questions.options.movie.8.appleTvPlus",
+        "tmdbValue": "350"
+      },
+      {
+        "label": "Farketmez",
+        "icon": "CircleEllipsis",
+        "key": "questions.options.movie.8.doesntMatter",
+        "tmdbValue": ""
+      }
     ]
   }
 ]

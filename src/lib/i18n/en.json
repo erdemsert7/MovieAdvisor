@@ -16,98 +16,207 @@
     "title": "Answer the questions",
     "back": "Back",
     "next": "Next",
-    "finish": "Finish and Show Movie",
+    "finish": "Finish and Show Results",
+    "multiSelectHint": "You can select multiple options",
+    "selectedItems": "item selected",
+    "clearAll": "Clear All",
+    "movie": {
+      "1": {
+        "title": "What genre of movie would you like to watch?"
+      },
+      "2": { "title": "Which time period do you prefer for movies?" },
+      "3": { "title": "What is your IMDB rating preference?" },
+      "4": { "title": "What is your movie duration preference?" },
+      "5": { "title": "Which language would you like to watch in?" },
+      "6": { "title": "What is your age rating preference?" },
+      "7": { "title": "How would you like it to be sorted?" },
+      "8": {
+        "title": "Which platform would you like to watch on?"
+      }
+    },
+    "series": {
+      "1": {
+        "title": "What genre of series would you like to watch?"
+      },
+      "2": { "title": "Which time period do you prefer for series?" },
+      "3": { "title": "What is your IMDB rating preference?" },
+      "4": { "title": "What is your series status preference?" },
+      "5": { "title": "Which language would you like to watch in?" },
+      "6": { "title": "Which topics interest you?" },
+      "7": { "title": "How would you like it to be sorted?" },
+      "8": {
+        "title": "Which platform would you like to watch on?"
+      }
+    },
+    "options": {
+      "movie": {
+        "1": {
+          "action": "Action",
+          "adventure": "Adventure",
+          "animation": "Animation",
+          "comedy": "Comedy",
+          "crime": "Crime",
+          "documentary": "Documentary",
+          "drama": "Drama",
+          "family": "Family",
+          "fantasy": "Fantasy",
+          "horror": "Horror",
+          "music": "Music",
+          "mystery": "Mystery",
+          "romance": "Romance",
+          "scienceFiction": "Science Fiction",
+          "thriller": "Thriller",
+          "war": "War",
+          "western": "Western"
+        },
+        "2": {
+          "year2024": "2024",
+          "year2020to2023": "2020-2023",
+          "year2010to2019": "2010-2019",
+          "year2000to2009": "2000-2009",
+          "year1990to1999": "1990-1999",
+          "classics": "Classics (Before 1990)"
+        },
+        "3": {
+          "perfect": "Perfect (9.0+)",
+          "veryHigh": "Very high (8.0+)",
+          "high": "High (7.0+)",
+          "good": "Good (6.0+)",
+          "average": "Average (5.0+)",
+          "doesntMatter": "Doesn't matter"
+        },
+        "4": {
+          "veryShort": "Very short (Under 60 min)",
+          "short": "Short (60-90 min)",
+          "medium": "Medium (90-120 min)",
+          "long": "Long (120-150 min)",
+          "veryLong": "Very long (150+ min)",
+          "doesntMatter": "Doesn't matter"
+        },
+        "5": {
+          "english": "English",
+          "turkish": "Turkish",
+          "french": "French",
+          "spanish": "Spanish",
+          "japanese": "Japanese",
+          "korean": "Korean",
+          "italian": "Italian",
+          "german": "German",
+          "doesntMatter": "Doesn't matter"
+        },
+        "6": {
+          "generalAudience": "General audience",
+          "familyFriendly": "Family friendly",
+          "thirteenPlus": "13+ years",
+          "adult": "Adult",
+          "doesntMatter": "Doesn't matter"
+        },
+        "7": {
+          "mostPopular": "Most popular",
+          "highestRated": "Highest rated",
+          "newest": "Newest",
+          "mostVoted": "Most voted",
+          "revenueRanking": "Revenue ranking"
+        },
+        "8": {
+          "netflix": "Netflix",
+          "amazonPrime": "Amazon Prime",
+          "disneyPlus": "Disney+",
+          "hboMax": "HBO Max",
+          "puhutv": "Puhutv",
+          "tvPlus": "TV+",
+          "tabii": "Tabii",
+          "appleTvPlus": "Apple TV+",
+          "doesntMatter": "Doesn't matter"
+        }
+      },
+      "series": {
+        "1": {
+          "action": "Action",
+          "adventure": "Adventure",
+          "animation": "Animation",
+          "comedy": "Comedy",
+          "crime": "Crime",
+          "documentary": "Documentary",
+          "drama": "Drama",
+          "family": "Family",
+          "kids": "Kids",
+          "mystery": "Mystery",
+          "news": "News",
+          "reality": "Reality",
+          "sciFi": "Sci-Fi",
+          "soap": "Soap",
+          "talkShow": "Talk Show",
+          "war": "War"
+        },
+        "2": {
+          "year2024": "2024",
+          "year2020to2023": "2020-2023",
+          "year2010to2019": "2010-2019",
+          "year2000to2009": "2000-2009",
+          "year1990to1999": "1990-1999",
+          "classics": "Classics (Before 1990)"
+        },
+        "3": {
+          "perfect": "Perfect (9.0+)",
+          "veryHigh": "Very high (8.0+)",
+          "high": "High (7.0+)",
+          "good": "Good (6.0+)",
+          "average": "Average (5.0+)",
+          "doesntMatter": "Doesn't matter"
+        },
+        "4": {
+          "ongoing": "Ongoing",
+          "completed": "Completed",
+          "cancelled": "Cancelled",
+          "inPlanning": "In Planning",
+          "doesntMatter": "Doesn't matter"
+        },
+        "5": {
+          "english": "English",
+          "turkish": "Turkish",
+          "french": "French",
+          "spanish": "Spanish",
+          "japanese": "Japanese",
+          "korean": "Korean",
+          "italian": "Italian",
+          "german": "German",
+          "doesntMatter": "Doesn't matter"
+        },
+        "6": {
+          "police": "Police",
+          "hospital": "Hospital",
+          "school": "School",
+          "family": "Family",
+          "fantasy": "Fantasy",
+          "space": "Space",
+          "vampire": "Vampire",
+          "zombie": "Zombie",
+          "none": "None"
+        },
+        "7": {
+          "mostPopular": "Most popular",
+          "highestRated": "Highest rated",
+          "newest": "Newest",
+          "mostVoted": "Most voted"
+        },
+        "8": {
+          "netflix": "Netflix",
+          "amazonPrime": "Amazon Prime",
+          "disneyPlus": "Disney+",
+          "hboMax": "HBO Max",
+          "puhutv": "Puhutv",
+          "tvPlus": "TV+",
+          "tabii": "Tabii",
+          "appleTvPlus": "Apple TV+",
+          "doesntMatter": "Doesn't matter"
+        }
+      }
+    },
     "confirmBackTitle": "You are about to return to the homepage",
     "confirmBackDesc": "Returning to the homepage will reset your answers. Are you sure you want to proceed?",
     "confirmYes": "Yes, go back",
-    "confirmNo": "No, stay",
-    "1": {
-      "title": "What do you expect from a movie today?"
-    },
-    "2": {
-      "title": "How do you feel right now?"
-    },
-    "3": {
-      "title": "Which element impresses you most in movies?"
-    },
-    "4": {
-      "title": "Do you prefer movies based on true stories?"
-    },
-    "5": {
-      "title": "Which environment do you prefer while watching a movie?"
-    },
-    "6": {
-      "title": "How much mental intensity do you want?"
-    },
-    "7": {
-      "title": "What is your preference about movie duration?"
-    },
-    "8": {
-      "title": "What is your favorite narrative style?"
-    },
-    "9": {
-      "title": "Which platform do you prefer to watch the movie on?"
-    },
-    "options": {
-      "1": {
-        "Kafamı dağıtsın": "Distract me",
-        "İlham versin": "Inspire me",
-        "Beni güldürsün": "Make me laugh",
-        "Hüzünlendirsin": "Make me sad",
-        "Sürüklesin": "Be thrilling"
-      },
-      "2": {
-        "Yorgunum": "I'm tired",
-        "Mutluyum": "I'm happy",
-        "Hüzünlüyüm": "I'm sad",
-        "Meraklıyım": "I'm curious",
-        "Sakinim": "I'm calm"
-      },
-      "3": {
-        "Karakter gelişimi": "Character development",
-        "Görsel atmosfer": "Visual atmosphere",
-        "Müzikler": "Music",
-        "Yönetmen tarzı": "Director's style",
-        "Konunun orijinalliği": "Originality of the subject"
-      },
-      "4": {
-        "Evet, ilham verici oluyor": "Yes, it's inspiring",
-        "Hayır, kurgu seviyorum": "No, I like fiction",
-        "Farketmez": "Doesn't matter"
-      },
-      "5": {
-        "Sessiz bir ortam": "A quiet environment",
-        "Kalabalık arkadaşlarla": "With a group of friends",
-        "Partnerimle": "With my partner",
-        "Gece yalnız": "Alone at night"
-      },
-      "6": {
-        "Basit ve keyifli": "Simple and fun",
-        "Düşündüren": "Thought-provoking",
-        "Psikolojik": "Psychological",
-        "Felsefi": "Philosophical",
-        "Tempolu ve sürükleyici": "Fast-paced and thrilling"
-      },
-      "7": {
-        "Kısa (60-90 dk)": "Short (60-90 min)",
-        "Orta (90-120 dk)": "Medium (90-120 min)",
-        "Uzun (>120 dk)": "Long (>120 min)",
-        "Önemli değil": "Doesn't matter"
-      },
-      "8": {
-        "Doğrusal klasik anlatım": "Linear classical narration",
-        "Flashback’li kurgu": "Flashback editing",
-        "Paralel hikayeler": "Parallel stories",
-        "Sürpriz sonlu": "With a twist ending"
-      },
-      "9": {
-        "Netflix": "Netflix",
-        "Amazon Prime": "Amazon Prime",
-        "Disney+": "Disney+",
-        "Apple TV": "Apple TV",
-        "Farketmez": "Doesn't matter"
-      }
-    }
+    "confirmNo": "No, stay"
   },
   "language": {
     "turkish": "Turkish",

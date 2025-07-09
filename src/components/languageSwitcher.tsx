@@ -1,32 +1,47 @@
 "use client";
 
-import { useLanguage } from "@/context/languageContext";
-import { Button } from "@/components/button";
+import { useLanguage } from "../context/languageContext";
+import { Button } from "./Button";
 import {
   DropdownMenu,
+  DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/dropdownMenu";
+} from "./DropdownMenu";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function LanguageSwitcher() {
   const { language, setLanguage, t } = useLanguage();
-  const { resolvedTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const activeBg = resolvedTheme === "dark" ? "bg-gray-800" : "bg-gray-100";
-  const hoverBg =
-    resolvedTheme === "dark" ? "hover:bg-gray-700" : "hover:bg-gray-200";
-  const textColor = resolvedTheme === "dark" ? "text-white" : "text-gray-900";
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  const getMenuItemClass = (lang: string) => {
-    const isActive = language === lang;
-    return [
-      "flex items-center gap-2 px-4 py-2 text-sm rounded-md transition-colors mb-1",
-      isActive ? `${activeBg} font-semibold` : hoverBg,
-      textColor,
-    ].join(" ");
+  if (!mounted) {
+    return (
+      <Button
+        variant="ghost"
+        size="icon"
+        className="flex items-center gap-2 p-2"
+      >
+        <div className="w-6 h-4 bg-gray-200 rounded-sm animate-pulse" />
+        <span className="text-xs font-medium hidden sm:inline">--</span>
+      </Button>
+    );
+  }
+
+  const handleLanguageChange = (lang: "tr" | "en") => {
+    console.log("Language changing to:", lang);
+    setLanguage(lang);
+    setIsOpen(false);
+  };
+
+  const handleOpenChange = (open: boolean) => {
+    console.log("Dropdown open state:", open);
+    setIsOpen(open);
   };
 
   const flagSrc =
@@ -35,36 +50,34 @@ export default function LanguageSwitcher() {
   const flagLabel = language === "tr" ? "TR" : "EN";
 
   return (
-    <DropdownMenu>
+    <DropdownMenu open={isOpen} onOpenChange={handleOpenChange}>
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          size="icon"
-          className="flex items-center gap-2 p-2 "
+          className="flex items-center gap-2 px-3 py-2 h-auto hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors border-0 focus:ring-0 focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <Image
-            src={flagSrc}
+            src={flagSrc || "/placeholder.svg"}
             alt={flagAlt}
-            width={50}
-            height={35}
+            width={24}
+            height={16}
             className="rounded-sm object-cover"
+            priority
           />
-          <span className="text-xs font-medium hidden sm:inline">
+          <span className="text-sm font-medium hidden sm:inline dark:text-gray-300 text-gray-700">
             {flagLabel}
           </span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className={`w-32 p-1 ${
-          resolvedTheme === "dark"
-            ? "bg-gray-900 border-gray-800"
-            : "bg-white border-gray-200"
-        } rounded-md shadow-lg`}
+        className="w-40 p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg"
+        sideOffset={8}
       >
         <DropdownMenuItem
-          onClick={() => setLanguage("tr")}
-          className={getMenuItemClass("tr")}
+          className="flex items-center gap-3 px-3 py-2 text-sm rounded-md transition-colors cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-white"
+          onClick={() => handleLanguageChange("tr")}
         >
           <Image
             src="/images/tr-flag.png"
@@ -76,8 +89,8 @@ export default function LanguageSwitcher() {
           <span>{t("language.turkish")}</span>
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setLanguage("en")}
-          className={getMenuItemClass("en")}
+          className="flex items-center gap-3 px-3 py-2 text-sm rounded-md transition-colors cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-white"
+          onClick={() => handleLanguageChange("en")}
         >
           <Image
             src="/images/en-flag.png"

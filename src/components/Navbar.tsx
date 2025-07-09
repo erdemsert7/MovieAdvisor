@@ -1,12 +1,12 @@
 "use client";
 
 import { Clapperboard, Tv2 } from "lucide-react";
-import ThemeToggle from "@/components/themeToggle";
-import LanguageSwitcher from "@/components/languageSwitcher";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/context/languageContext";
 import ConfirmDialog from "@/components/ConfirmDialog";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   category?: "movie" | "series" | null;

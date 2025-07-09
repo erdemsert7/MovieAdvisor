@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 interface QuestionState {
-  answers: Record<number, string>;
-  setAnswer: (id: number, option: string) => void;
+  answers: Record<number, string | string[]>;
+  setAnswer: (id: number, option: string | string[]) => void;
   resetAnswers: () => void;
 }
 
