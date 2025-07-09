@@ -3,8 +3,9 @@
 import { Inter } from "next/font/google";
 
 import "../styles/globals.css";
-import { ThemeProvider } from "@/components/themeProvider";
+
 import { LanguageProvider } from "@/context/languageContext";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,19 +1,19 @@
 "use client";
 
-import movieQuestions from "@/data/moviesQuestions.json";
-import seriesQuestions from "@/data/seriesQuestions.json";
-import { useAppStore } from "@/store/useAppStore";
+import movieQuestions from "../data/moviesQuestions.json";
+import seriesQuestions from "../data/seriesQuestions.json";
+import { useAppStore } from "../store/useAppStore";
 import { useState, useEffect } from "react";
-import { useQuestionStore } from "@/store/useQuestionStore";
+import { useQuestionStore } from "../store/useQuestionStore";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, CheckCircle } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
-import AppCard from "@/components/AppCard";
-import { Button } from "@/components/button";
-import Stepper from "@/components/Stepper";
-import { useLanguage } from "@/context/languageContext";
-import QuestionForm from "@/components/QuestionForm";
-import ConfirmDialog from "@/components/ConfirmDialog";
+import AppCard from "./AppCard";
+import { Button } from "./Button";
+import Stepper from "./Stepper";
+import { useLanguage } from "../context/languageContext";
+import QuestionForm from "./QuestionForm";
+import ConfirmDialog from "./ConfirmDialog";
 
 export default function QuestionStepper() {
   const { answers, setAnswer } = useQuestionStore();
@@ -34,8 +34,17 @@ export default function QuestionStepper() {
 
   if (!category) return null;
 
+  const isAnswered = () => {
+    const answer = answers[current.id];
+    if (current.multiSelect) {
+      return Array.isArray(answer) && answer.length > 0;
+    } else {
+      return answer && answer !== "";
+    }
+  };
+
   const goNext = () => {
-    if (!answers[current.id]) return;
+    if (!isAnswered()) return;
     if (step < total - 1) setStep((s) => s + 1);
     else router.push("/results");
   };
@@ -86,7 +95,7 @@ export default function QuestionStepper() {
                   size="sm"
                   onClick={goNext}
                   className="flex-1 flex items-center justify-center gap-2"
-                  disabled={!answers[current.id]}
+                  disabled={!isAnswered()}
                 >
                   {step === total - 1 ? (
                     <>

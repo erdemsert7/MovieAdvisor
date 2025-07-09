@@ -16,92 +16,203 @@
     "title": "Soruları cevaplayın",
     "back": "Geri",
     "next": "Devam",
-    "finish": "Bitir ve Film Göster",
-    "1": {
-      "title": "Bugün bir filmden beklentin nedir?"
+    "finish": "Bitir ve Sonuçları Göster",
+    "multiSelectHint": "Birden fazla seçenek seçebilirsiniz",
+    "selectedItems": "seçim yapıldı",
+    "clearAll": "Tümünü Temizle",
+    "movie": {
+      "1": {
+        "title": "Hangi türde film izlemek istiyorsunuz?"
+      },
+      "2": { "title": "Hangi dönemden film tercih edersiniz?" },
+      "3": { "title": "IMDB puanı tercihiniz nedir?" },
+      "4": { "title": "Film süresi tercihiniz nedir?" },
+      "5": { "title": "Hangi dilde izlemek istersiniz?" },
+      "6": { "title": "Yaş sınırı tercihiniz nedir?" },
+      "7": { "title": "Nasıl sıralanmasını istersiniz?" },
+      "8": {
+        "title": "Hangi platformda izlemek istersiniz?"
+      }
     },
-    "2": {
-      "title": "Şu anda ruh halin nasıl?"
-    },
-    "3": {
-      "title": "Filmlerde hangi öğe seni en çok etkiler?"
-    },
-    "4": {
-      "title": "Gerçek olaylara dayalı filmler mi tercih edersin?"
-    },
-    "5": {
-      "title": "Filmi izlerken hangi ortam daha çok hoşuna gider?"
-    },
-    "6": {
-      "title": "Zihinsel olarak ne kadar yoğunluk istiyorsun?"
-    },
-    "7": {
-      "title": "Film süresi hakkında tercihin nedir?"
-    },
-    "8": {
-      "title": "Favori anlatım biçimin hangisi?"
-    },
-    "9": {
-      "title": "Filmi hangi platformda izlemeyi tercih edersin?"
+    "series": {
+      "1": {
+        "title": "Hangi türde dizi izlemek istiyorsunuz?"
+      },
+      "2": { "title": "Hangi dönemden dizi tercih edersiniz?" },
+      "3": { "title": "IMDB puanı tercihiniz nedir?" },
+      "4": { "title": "Dizi durumu tercihiniz nedir?" },
+      "5": { "title": "Hangi dilde izlemek istersiniz?" },
+      "6": {
+        "title": "Hangi konular ilginizi çeker?"
+      },
+      "7": { "title": "Nasıl sıralanmasını istersiniz?" },
+      "8": {
+        "title": "Hangi platformda izlemek istersiniz?"
+      }
     },
     "options": {
-      "1": {
-        "Kafamı dağıtsın": "Kafamı dağıtsın",
-        "İlham versin": "İlham versin",
-        "Beni güldürsün": "Beni güldürsün",
-        "Hüzünlendirsin": "Hüzünlendirsin",
-        "Sürüklesin": "Sürüklesin"
+      "movie": {
+        "1": {
+          "action": "Aksiyon",
+          "adventure": "Macera",
+          "animation": "Animasyon",
+          "comedy": "Komedi",
+          "crime": "Suç",
+          "documentary": "Belgesel",
+          "drama": "Drama",
+          "family": "Aile",
+          "fantasy": "Fantastik",
+          "horror": "Korku",
+          "music": "Müzik",
+          "mystery": "Gizem",
+          "romance": "Romantik",
+          "scienceFiction": "Bilim Kurgu",
+          "thriller": "Gerilim",
+          "war": "Savaş",
+          "western": "Vahşi Batı"
+        },
+        "2": {
+          "year2024": "2024",
+          "year2020to2023": "2020-2023",
+          "year2010to2019": "2010-2019",
+          "year2000to2009": "2000-2009",
+          "year1990to1999": "1990-1999",
+          "classics": "Klasikler (1990 öncesi)"
+        },
+        "3": {
+          "perfect": "Mükemmel (9.0+)",
+          "veryHigh": "Çok yüksek (8.0+)",
+          "high": "Yüksek (7.0+)",
+          "good": "İyi (6.0+)",
+          "average": "Orta (5.0+)",
+          "doesntMatter": "Farketmez"
+        },
+        "4": {
+          "veryShort": "Çok kısa (60 dk altı)",
+          "short": "Kısa (60-90 dk)",
+          "medium": "Orta (90-120 dk)",
+          "long": "Uzun (120-150 dk)",
+          "veryLong": "Çok uzun (150+ dk)",
+          "doesntMatter": "Farketmez"
+        },
+        "5": {
+          "english": "İngilizce",
+          "turkish": "Türkçe",
+          "french": "Fransızca",
+          "spanish": "İspanyolca",
+          "japanese": "Japonca",
+          "korean": "Korece",
+          "italian": "İtalyanca",
+          "german": "Almanca",
+          "doesntMatter": "Farketmez"
+        },
+        "6": {
+          "generalAudience": "Genel izleyici",
+          "familyFriendly": "Aile dostu",
+          "thirteenPlus": "13 yaş üstü",
+          "adult": "Yetişkin",
+          "doesntMatter": "Farketmez"
+        },
+        "7": {
+          "mostPopular": "En popüler",
+          "highestRated": "En yüksek puan",
+          "newest": "En yeni",
+          "mostVoted": "En çok oy alan",
+          "revenueRanking": "Gelir sıralaması"
+        },
+        "8": {
+          "netflix": "Netflix",
+          "amazonPrime": "Amazon Prime",
+          "disneyPlus": "Disney+",
+          "hboMax": "HBO Max",
+          "puhutv": "Puhutv",
+          "tvPlus": "TV+",
+          "tabii": "Tabii",
+          "appleTvPlus": "Apple TV+",
+          "doesntMatter": "Farketmez"
+        }
       },
-      "2": {
-        "Yorgunum": "Yorgunum",
-        "Mutluyum": "Mutluyum",
-        "Hüzünlüyüm": "Hüzünlüyüm",
-        "Meraklıyım": "Meraklıyım",
-        "Sakinim": "Sakinim"
-      },
-      "3": {
-        "Karakter gelişimi": "Karakter gelişimi",
-        "Görsel atmosfer": "Görsel atmosfer",
-        "Müzikler": "Müzikler",
-        "Yönetmen tarzı": "Yönetmen tarzı",
-        "Konunun orijinalliği": "Konunun orijinalliği"
-      },
-      "4": {
-        "Evet, ilham verici oluyor": "Evet, ilham verici oluyor",
-        "Hayır, kurgu seviyorum": "Hayır, kurgu seviyorum",
-        "Farketmez": "Farketmez"
-      },
-      "5": {
-        "Sessiz bir ortam": "Sessiz bir ortam",
-        "Kalabalık arkadaşlarla": "Kalabalık arkadaşlarla",
-        "Partnerimle": "Partnerimle",
-        "Gece yalnız": "Gece yalnız"
-      },
-      "6": {
-        "Basit ve keyifli": "Basit ve keyifli",
-        "Düşündüren": "Düşündüren",
-        "Psikolojik": "Psikolojik",
-        "Felsefi": "Felsefi",
-        "Tempolu ve sürükleyici": "Tempolu ve sürükleyici"
-      },
-      "7": {
-        "Kısa (60-90 dk)": "Kısa (60-90 dk)",
-        "Orta (90-120 dk)": "Orta (90-120 dk)",
-        "Uzun (>120 dk)": "Uzun (>120 dk)",
-        "Önemli değil": "Önemli değil"
-      },
-      "8": {
-        "Doğrusal klasik anlatım": "Doğrusal klasik anlatım",
-        "Flashback’li kurgu": "Flashback’li kurgu",
-        "Paralel hikayeler": "Paralel hikayeler",
-        "Sürpriz sonlu": "Sürpriz sonlu"
-      },
-      "9": {
-        "Netflix": "Netflix",
-        "Amazon Prime": "Amazon Prime",
-        "Disney+": "Disney+",
-        "Apple TV": "Apple TV",
-        "Farketmez": "Farketmez"
+      "series": {
+        "1": {
+          "action": "Aksiyon",
+          "adventure": "Macera",
+          "animation": "Animasyon",
+          "comedy": "Komedi",
+          "crime": "Suç",
+          "documentary": "Belgesel",
+          "drama": "Drama",
+          "family": "Aile",
+          "kids": "Çocuk",
+          "mystery": "Gizem",
+          "news": "Haber",
+          "reality": "Reality",
+          "sciFi": "Bilim Kurgu",
+          "soap": "Pembe Dizi",
+          "talkShow": "Talk Show",
+          "war": "Savaş"
+        },
+        "2": {
+          "year2024": "2024",
+          "year2020to2023": "2020-2023",
+          "year2010to2019": "2010-2019",
+          "year2000to2009": "2000-2009",
+          "year1990to1999": "1990-1999",
+          "classics": "Klasikler (1990 öncesi)"
+        },
+        "3": {
+          "perfect": "Mükemmel (9.0+)",
+          "veryHigh": "Çok yüksek (8.0+)",
+          "high": "Yüksek (7.0+)",
+          "good": "İyi (6.0+)",
+          "average": "Orta (5.0+)",
+          "doesntMatter": "Farketmez"
+        },
+        "4": {
+          "ongoing": "Devam eden",
+          "completed": "Tamamlanmış",
+          "cancelled": "İptal edilmiş",
+          "inPlanning": "Planlanıyor",
+          "doesntMatter": "Farketmez"
+        },
+        "5": {
+          "english": "İngilizce",
+          "turkish": "Türkçe",
+          "french": "Fransızca",
+          "spanish": "İspanyolca",
+          "japanese": "Japonca",
+          "korean": "Korece",
+          "italian": "İtalyanca",
+          "german": "Almanca",
+          "doesntMatter": "Farketmez"
+        },
+        "6": {
+          "police": "Polis",
+          "hospital": "Hastane",
+          "school": "Okul",
+          "family": "Aile",
+          "fantasy": "Fantastik",
+          "space": "Uzay",
+          "vampire": "Vampir",
+          "zombie": "Zombi",
+          "none": "Hiçbiri"
+        },
+        "7": {
+          "mostPopular": "En popüler",
+          "highestRated": "En yüksek puan",
+          "newest": "En yeni",
+          "mostVoted": "En çok oy alan"
+        },
+        "8": {
+          "netflix": "Netflix",
+          "amazonPrime": "Amazon Prime",
+          "disneyPlus": "Disney+",
+          "hboMax": "HBO Max",
+          "puhutv": "Puhutv",
+          "tvPlus": "TV+",
+          "tabii": "Tabii",
+          "appleTvPlus": "Apple TV+",
+          "doesntMatter": "Farketmez"
+        }
       }
     },
     "confirmBackTitle": "Anasayfaya dönmek üzeresiniz",
@@ -109,7 +220,6 @@
     "confirmYes": "Evet, dön",
     "confirmNo": "Hayır, kal"
   },
-
   "language": {
     "turkish": "Türkçe",
     "english": "İngilizce"
