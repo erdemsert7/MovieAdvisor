@@ -79,7 +79,7 @@ export default function QuestionStepper() {
                 setAnswer={setAnswer}
                 t={t}
               />
-              <div className="flex flex-row justify-between gap-3 pt-2 w-full">
+              <div className="flex flex-row justify-between gap-3 w-full">
                 <Button
                   type="button"
                   variant="navBack"

@@ -31,13 +31,3 @@ export default function ThemeToggle() {
     </Button>
   );
 }
-
-/**
- * <OptionButton
-                label="Geri"
-                Icon={ChevronLeft}
-                onClick={goBack}
-                disabled={step === 0}
-                variant="nav"
-              />
- */
